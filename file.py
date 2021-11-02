@@ -22,7 +22,7 @@ def main():
     for i in range(1,101):
         start = time.time()
         print("New thread \n")
-        files = os.listdir("./input")
+        files = os.listdir(".\input")
         for f in files:
             cmd= f
             t1 = threading.Thread(target=task , args=(cmd,))
